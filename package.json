@@ -1,8 +1,7 @@
 {
   "name": "lorem",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "ipsum.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +11,7 @@
     "express": "^4.15.3",
     "express.js": "^1.0.0",
     "lorem-ipsum": "^1.0.4"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

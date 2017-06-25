@@ -1,14 +1,12 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const loremIpsum = require('lorem-ipsum');
 
 
-app.use('/lorem', express.static(path.join(__dirname, 'public')))
 
-app.get('/', function (req, res) {
-  res.send('text here???')
-})
-
+app.get('', function(req, res) {
+    res.send(loremIpsum({count: 3, units: 'paragraphs', format: 'html'}));
+});
 
 app.listen(3000, function(){
   console.log('Hey, it works!')
